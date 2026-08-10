@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marc Martín Pérez — Backend Engineer</title>
+    <meta name="description"
+        content="Backend Engineer especializado en sistemas en tiempo real, torneos online, Android y datos. Java/Spring, WebSocket, Node.js, Oracle/BI." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">marc<span>.</span>dev</div>
+            <nav class="topnav">
+                <a href="#proyectos">proyectos</a>
+                <a href="#stack">stack</a>
+                <a href="#sobre-mi">sobre mí</a>
+                <a href="#contacto">contacto</a>
+            </nav>
+            <div class="status-pill"><span class="dot"></span>online</div>
+        </div>
+    </div>
+
+    <header class="hero wrap">
+        <div class="eyebrow"><span class="dot"></span>status: disponible para nuevos proyectos</div>
+        <h1>Marc Martín<br>Pérez</h1>
+        <div class="role">Backend Engineer — Java / Spring · Tiempo real · Android · Datos</div>
+        <p class="lede">
+            Diseño sistemas que <strong>no se caen cuando más gente los está usando</strong>: torneos de póker con
+            cientos de jugadores conectados a la vez por WebSocket, apps Android con miles de usuarios, e informes que
+            tienen que cuadrar siempre. Java, Node.js y Oracle en el backend; código que se pueda leer dentro de un año.
+        </p>
+        <div class="hero-cta">
+            <a href="#proyectos" class="btn btn-primary">Ver proyectos →</a>
+            <a href="#contacto" class="btn btn-ghost">Hablemos</a>
+        </div>
+
+        <svg class="pulseline" viewBox="0 0 800 64" preserveAspectRatio="none" aria-hidden="true">
+            <path
+                d="M0,32 L120,32 L140,32 L155,8 L170,56 L185,32 L210,32 L340,32 L360,32 L375,14 L390,50 L405,32 L430,32 L560,32 L580,32 L595,4 L610,58 L625,32 L650,32 L800,32" />
+        </svg>
+    </header>
+
+    <section id="proyectos" class="wrap">
+        <div class="section-head reveal-target">
+            <div class="prompt">ps --projects</div>
+            <h2>Lo que tengo en ejecución</h2>
+        </div>
+
+        <div class="proc-table">
+            <article class="proc reveal-target">
+                <div class="proc-top">
+                    <div>
+                        <span class="proc-id">proc/01</span>
+                        <div class="proc-name">Poker Online — Backend</div>
+                        <div class="proc-tags">SPRING BOOT · WEBSOCKET · JWT · MYSQL</div>
+                    </div>
+                    <span class="proc-status dev"><span class="dot"></span>en desarrollo</span>
+                </div>
+                <p class="proc-desc">Backend de un Texas Hold'em multijugador en tiempo real — 207 clases Java
+                    organizadas en dominios (torneos, amigos, logros, moderación, bots). Autenticación JWT, mesas por
+                    WebSocket, motor de bots con IA, torneos individuales y por equipos, moderación con sanciones
+                    automáticas, modo espectador, mesas privadas y un sistema de amigos completo con chat privado y
+                    transferencia de fichas. 53 logros distintos, estadísticas y ranking, API testeada con Postman.</p>
+            </article>
+
+            <article class="proc reveal-target">
+                <div class="proc-top">
+                    <div>
+                        <span class="proc-id">proc/02</span>
+                        <div class="proc-name">App de Anime — Android</div>
+                        <div class="proc-tags">ANDROID · RETROFIT · BACKEND PROPIO</div>
+                    </div>
+                    <span class="proc-status dev"><span class="dot"></span>en desarrollo</span>
+                </div>
+                <p class="proc-desc">Home con listados dinámicos, favoritos, ficha de detalle con episodios, reproductor
+                    a pantalla completa y consumo de un backend propio vía Retrofit — pensada para que se sienta rápida
+                    incluso con catálogos grandes.</p>
+            </article>
+
+            <article class="proc reveal-target">
+                <div class="proc-top">
+                    <div>
+                        <span class="proc-id">proc/03</span>
+                        <div class="proc-name">Web Cooperativa Musical</div>
+                        <div class="proc-tags">NODE.JS · API SPOTIFY · MÉTRICAS</div>
+                    </div>
+                    <span class="proc-status stable"><span class="dot"></span>estable</span>
+                </div>
+                <p class="proc-desc">Landing para tres artistas con datos en vivo de Spotify (top tracks), middleware
+                    propio de estadísticas de visitas y un panel <code>/stats</code> para seguir el rendimiento del
+                    sitio.</p>
+            </article>
+
+            <article class="proc reveal-target">
+                <div class="proc-top">
+                    <div>
+                        <span class="proc-id">proc/04</span>
+                        <div class="proc-name">Web Artista — J Rodriguez</div>
+                        <div class="proc-tags">YOUTUBE DATA API · FORMSPREE · SIN BACKEND</div>
+                    </div>
+                    <span class="proc-status dev"><span class="dot"></span>en desarrollo</span>
+                </div>
+                <p class="proc-desc">Sitio 100% estático para un artista de reggaetón: los últimos vídeos se actualizan
+                    solos vía la YouTube Data API, con formulario de contacto y newsletter conectados a Formspree,
+                    analítica sin cookies (GoatCounter), páginas de privacidad y SEO cuidado con sitemap y 404
+                    personalizada — todo sin servidor ni coste de hosting.</p>
+            </article>
+
+            <article class="proc reveal-target">
+                <div class="proc-top">
+                    <div>
+                        <span class="proc-id">proc/05</span>
+                        <div class="proc-name">BI Publisher / Oracle Forms</div>
+                        <div class="proc-tags">ORACLE DB · PL/SQL · BI PUBLISHER</div>
+                    </div>
+                    <span class="proc-status stable"><span class="dot"></span>estable</span>
+                </div>
+                <p class="proc-desc">Informes de familias y artículos activos con exportación a Excel, más
+                    procedimientos PL/SQL para importaciones masivas de datos en entornos de producción.</p>
+            </article>
+        </div>
+    </section>
+    <!-- END PROJECTS -->
+
+
+    <section id="stack" class="wrap">
+        <div class="section-head reveal-target">
+            <div class="prompt">whoami --stack</div>
+            <h2>Con qué construyo</h2>
+        </div>
+        <div class="stack-grid reveal-target">
+            <div class="stack-cat">
+                <h3>Backend</h3>
+                <ul>
+                    <li>Java / Spring Boot</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>Bash</li>
+                </ul>
+            </div>
+            <div class="stack-cat">
+                <h3>Tiempo real & Mobile</h3>
+                <ul>
+                    <li>WebSocket</li>
+                    <li>Android</li>
+                    <li>Kotlin</li>
+                </ul>
+            </div>
+            <div class="stack-cat">
+                <h3>Datos</h3>
+                <ul>
+                    <li>PostgreSQL</li>
+                    <li>MySQL</li>
+                    <li>Oracle DB</li>
+                    <li>PL/SQL</li>
+                </ul>
+            </div>
+            <div class="stack-cat">
+                <h3>Infra & Deploy</h3>
+                <ul>
+                    <li>Docker</li>
+                    <li>Git</li>
+                    <li>Render</li>
+                    <li>Vercel</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="wrap">
+        <div class="section-head reveal-target">
+            <div class="prompt">cat about.md</div>
+            <h2>Más allá del código</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-text reveal-target">
+                <p>Fuera del teclado sigo pensando en <strong>sistemas</strong>: en el ajedrez, en cómo se organiza un
+                    torneo, en por qué una arquitectura aguanta o se cae bajo presión. Es probablemente la misma cabeza
+                    que disfruta diseñando el ranking del sistema de póker.</p>
+                <p>Soy socio y ultra del <strong>Real Betis Balompié</strong> — de los que no fallan un domingo. Cuando
+                    no estoy programando, es fácil encontrarme jugando LoL, Valorant o CS2, o desconectando del todo con
+                    algo tan poco competitivo como Euro Truck Simulator 2.</p>
+                <p>Conducir, de hecho, es donde de verdad desconecto: en el simulador o en la carretera, es lo más
+                    parecido que tengo a terapia.</p>
+            </div>
+            <div class="facts reveal-target">
+                <div class="fact">
+                    <div class="fact-k">estrategia</div>
+                    <div class="fact-v">Ajedrez y juegos de estrategia</div>
+                </div>
+                <div class="fact">
+                    <div class="fact-k">fútbol</div>
+                    <div class="fact-v">Socio y ultra del <strong>Real Betis Balompié</strong></div>
+                </div>
+                <div class="fact">
+                    <div class="fact-k">gaming</div>
+                    <div class="fact-v">LoL, Valorant, CS2 · y ETS2 / Sons of the Forest para relajar</div>
+                </div>
+                <div class="fact">
+                    <div class="fact-k">pokémon</div>
+                    <div class="fact-v">Fan desde crío — favorito <strong>Emboar</strong>, pero todos me asocian con
+                        <strong>Rayquaza</strong></div>
+                </div>
+                <div class="fact">
+                    <div class="fact-k">top 3</div>
+                    <div class="fact-v">Pokémon Negro, Esmeralda y HeartGold</div>
+                </div>
+                <div class="fact">
+                    <div class="fact-k">carretera</div>
+                    <div class="fact-v">Del simulador a plantearme un camión de verdad algún día</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="wrap">
+        <div class="contact-box reveal-target">
+            <div class="prompt" style="justify-content:center; display:flex;">contact --init</div>
+            <h2>Hablemos</h2>
+            <p>Abierto a proyectos backend, sistemas en tiempo real o simplemente hablar de arquitectura. Escríbeme por
+                donde te venga mejor.</p>
+            <div class="contact-links">
+                <a class="btn btn-primary" href="mailto:mape2003@gmail.com">Email →</a>
+                <a class="btn btn-ghost" href="https://www.linkedin.com/in/marc-mart%C3%ADn-305968240/" target="_blank"
+                    rel="noopener">LinkedIn</a>
+                <a class="btn btn-ghost" href="https://github.com/Marukunai" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        Marc Martín Pérez · construido con HTML, CSS y café
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
