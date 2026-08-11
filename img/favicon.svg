@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect x="1" y="1" width="62" height="62" rx="14" fill="#0a1220" stroke="#222e42" stroke-width="2"/>
+  <text x="32" y="41" text-anchor="middle" font-family="'IBM Plex Mono', ui-monospace, 'Courier New', monospace"
+        font-weight="700" font-size="30" fill="#eba43d">M</text>
+  <rect x="20" y="47" width="24" height="5" rx="2.5" fill="#49d6c0"/>
+</svg>
