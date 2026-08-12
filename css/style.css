@@ -40,6 +40,7 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     background:
         radial-gradient(ellipse 900px 500px at 15% -10%, rgba(235, 164, 61, 0.07), transparent 60%),
         radial-gradient(ellipse 700px 500px at 100% 10%, rgba(73, 214, 192, 0.05), transparent 55%),
@@ -69,13 +70,13 @@ button:focus-visible {
 
 @media (max-width:640px) {
     .wrap {
-        padding: 0 32px;
+        padding: 0 40px;
     }
 }
 
 @media (max-width:420px) {
     .wrap {
-        padding: 0 30px;
+        padding: 0 36px;
     }
 }
 
@@ -331,6 +332,10 @@ h2 {
     border-top: 1px solid var(--border);
 }
 
+#educacion {
+    border-top: 1px solid var(--border);
+}
+
 #sobre-mi {
     border-top: 1px solid var(--border);
 }
@@ -463,6 +468,40 @@ a.proc-name:hover {
     padding: 2px 6px;
     border-radius: 4px;
     font-size: 0.92em;
+}
+
+.proc-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.stat-chip {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--amber);
+    border: 1px solid rgba(235, 164, 61, 0.28);
+    background: rgba(235, 164, 61, 0.06);
+    padding: 5px 11px;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+.proc-media {
+    margin-top: 18px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border-hi);
+    background: var(--bg-alt);
+    aspect-ratio: 16/9;
+}
+
+.proc-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 a.inline-link {

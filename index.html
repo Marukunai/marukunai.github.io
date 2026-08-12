@@ -39,6 +39,7 @@
             <nav class="topnav">
                 <a href="#proyectos">proyectos</a>
                 <a href="#experiencia">experiencia</a>
+                <a href="#educacion">formación</a>
                 <a href="#stack">stack</a>
                 <a href="#sobre-mi">sobre mí</a>
                 <a href="#contacto">contacto</a>
@@ -91,6 +92,15 @@
                     WebSocket, motor de bots con IA, torneos individuales y por equipos, moderación con sanciones
                     automáticas, modo espectador, mesas privadas y un sistema de amigos completo con chat privado y
                     transferencia de fichas. 53 logros distintos, estadísticas y ranking, API testeada con Postman.</p>
+                <div class="proc-stats">
+                    <span class="stat-chip">207 clases Java</span>
+                    <span class="stat-chip">53 logros</span>
+                    <span class="stat-chip">JWT + WebSocket</span>
+                </div>
+                <!-- Diagrama de arquitectura -->
+                <div class="proc-media diagram"><img src="img/proyectos/poker/poker-arquitectura.svg"
+                        alt="Diagrama de arquitectura del backend de poker_online: cliente conecta vía REST y WebSocket a Spring Boot 3, que contiene los módulos de dominio, jobs programados, y persiste en MySQL 8"
+                        loading="lazy"></div>
             </article>
 
             <article class="proc reveal-target">
@@ -107,6 +117,15 @@
                     (double down, split, surrender, insurance), un sistema de pistas con estrategia básica y contador de
                     cartas Hi-Lo visual, animaciones y estadísticas de sesión. Arquitectura por capas
                     (core/engine/ai/ui) con tests unitarios en pytest.</p>
+                <div class="proc-stats">
+                    <span class="stat-chip">1–8 mazos</span>
+                    <span class="stat-chip">Hi-Lo counter</span>
+                    <span class="stat-chip">pytest</span>
+                </div>
+                <div class="proc-media">
+                    <img src="img/proyectos/blackjack.png" alt="Blackjack Pro en ejecución" loading="lazy">
+                </div>
+
             </article>
 
             <article class="proc reveal-target">
@@ -125,6 +144,15 @@
                         href="https://github.com/Marukunai/animeApp" target="_blank"
                         rel="noopener"><code>animeApp</code></a> es el cliente Android que la consume vía Retrofit, con
                     login, favoritos animados, galería y reproductor a pantalla completa.</p>
+                <div class="proc-stats">
+                    <span class="stat-chip">2 repos</span>
+                    <span class="stat-chip">Spring Boot + JPA</span>
+                    <span class="stat-chip">Retrofit</span>
+                </div>
+                <!-- TODO IMAGEN: captura de la app Android — home o favoritos son las más vistosas (corazón animado).
+      Cuando la tengas, guárdala en img/proyectos/anime.png y descomenta esto:
+      <div class="proc-media"><img src="img/proyectos/anime.png" alt="App de Anime, pantalla de favoritos" loading="lazy"></div>
+      -->
             </article>
 
             <article class="proc reveal-target">
@@ -140,6 +168,15 @@
                 <p class="proc-desc">Landing para tres artistas con datos en vivo de Spotify (top tracks), middleware
                     propio de estadísticas de visitas y un panel <code>/stats</code> para seguir el rendimiento del
                     sitio.</p>
+                <div class="proc-stats">
+                    <span class="stat-chip">3 artistas</span>
+                    <span class="stat-chip">API Spotify</span>
+                    <span class="stat-chip">/stats en vivo</span>
+                </div>
+                <!-- TODO IMAGEN: captura de la landing en el navegador, idealmente mostrando las secciones de los 3 artistas.
+      Cuando la tengas, guárdala en img/proyectos/cooperativa.png y descomenta esto:
+      <div class="proc-media"><img src="img/proyectos/cooperativa.png" alt="Web Cooperativa Musical" loading="lazy"></div>
+      -->
             </article>
 
             <article class="proc reveal-target">
@@ -156,6 +193,15 @@
                     solos vía la YouTube Data API, con formulario de contacto y newsletter conectados a Formspree,
                     analítica sin cookies (GoatCounter), páginas de privacidad y SEO cuidado con sitemap y 404
                     personalizada — todo sin servidor ni coste de hosting.</p>
+                <div class="proc-stats">
+                    <span class="stat-chip">YouTube Data API</span>
+                    <span class="stat-chip">0€ hosting</span>
+                    <span class="stat-chip">SEO + privacidad</span>
+                </div>
+                <!-- TODO IMAGEN: captura de la home, idealmente con el bloque de últimos vídeos de YouTube visible.
+      Cuando la tengas, guárdala en img/proyectos/jrodriguez.png y descomenta esto:
+      <div class="proc-media"><img src="img/proyectos/jrodriguez.png" alt="Web de J Rodriguez" loading="lazy"></div>
+      -->
             </article>
 
             <article class="proc reveal-target">
@@ -172,6 +218,15 @@
                     te dice el tipo real del rival. Metí a mano la tabla completa de efectividades entre los 18 tipos y,
                     a partir de lo que ves en combate ("súper efectivo", "no muy efectivo"...), el programa va
                     descartando tipos hasta acotar cuál es el de verdad.</p>
+                <div class="proc-stats">
+                    <span class="stat-chip">18 tipos</span>
+                    <span class="stat-chip">100% CLI</span>
+                    <span class="stat-chip">0 dependencias</span>
+                </div>
+                <!-- TODO IMAGEN: captura de terminal mostrando el programa en acción, descartando tipos tras un par de pistas.
+      Cuando la tengas, guárdala en img/proyectos/pokemon-cli.png y descomenta esto:
+      <div class="proc-media"><img src="img/proyectos/pokemon-cli.png" alt="Identificador de Tipos Pokémon, terminal" loading="lazy"></div>
+      -->
             </article>
         </div>
     </section>
@@ -198,6 +253,11 @@
                     con SAP y generación de informes de trazabilidad (DHF), con CI/CD en Azure DevOps. También
                     responsable del mantenimiento semanal y mensual de los servidores, pruebas en local y en entorno
                     PRE, y despliegues a PRE y PRODUCCIÓN.</p>
+                <div class="proc-stats">
+                    <span class="stat-chip">2 clientes</span>
+                    <span class="stat-chip">Azure DevOps CI/CD</span>
+                    <span class="stat-chip">PRE + PRODUCCIÓN</span>
+                </div>
             </article>
 
             <article class="proc reveal-target">
@@ -207,8 +267,57 @@
                         <div class="proc-tags">ORACLE DB · PL/SQL · BI PUBLISHER</div>
                     </div>
                 </div>
-                <p class="proc-desc">Generación de informes activos con exportación a Excel, y
+                <p class="proc-desc">Generación de informes de familias y artículos activos con exportación a Excel, y
                     automatización de importaciones masivas de datos en producción mediante procedimientos PL/SQL.</p>
+                <div class="proc-stats">
+                    <span class="stat-chip">PL/SQL</span>
+                    <span class="stat-chip">Export a Excel</span>
+                    <span class="stat-chip">Producción</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="educacion" class="wrap">
+        <div class="section-head reveal-target">
+            <div class="prompt">cat educacion.log</div>
+            <h2>Formación</h2>
+        </div>
+        <div class="proc-table">
+            <article class="proc reveal-target">
+                <div class="proc-top">
+                    <div>
+                        <div class="proc-name">Técnico Superior DAM — Escola del Treball de Barcelona</div>
+                        <div class="proc-tags">JAVA · XML/DTD/XSD · SQL</div>
+                    </div>
+                    <span class="proc-status stable"><span class="dot"></span>titulado</span>
+                </div>
+                <p class="proc-desc">Desarrollo de Aplicaciones Multiplataforma, terminado con nota media de 7.58, con
+                    las mejores calificaciones en Programación (Java), Lenguaje de Marcas (XML, HTML, DTD y XSD) y Bases
+                    de Datos (SQL). Antes de esto cursé 2 años de Ingeniería Informática, que pausé para priorizar la
+                    estabilidad económica familiar.</p>
+                <div class="proc-stats">
+                    <span class="stat-chip">Nota: 7.58</span>
+                    <span class="stat-chip">Java</span>
+                    <span class="stat-chip">XML/DTD/XSD</span>
+                    <span class="stat-chip">SQL</span>
+                </div>
+            </article>
+
+            <article class="proc reveal-target">
+                <div class="proc-top">
+                    <div>
+                        <div class="proc-name">Grado en Ingeniería Informática — UOC</div>
+                        <div class="proc-tags">ONLINE · PRÓXIMO PASO</div>
+                    </div>
+                    <span class="proc-status stable"><span class="dot"></span>previsto</span>
+                </div>
+                <p class="proc-desc">Siguiente paso en formación: retomar los estudios universitarios en modalidad
+                    online mientras sigo trabajando, para sumar el grado a la Formación Profesional ya terminada.</p>
+                <div class="proc-stats">
+                    <span class="stat-chip">UOC</span>
+                    <span class="stat-chip">Modalidad online</span>
+                </div>
             </article>
         </div>
     </section>
