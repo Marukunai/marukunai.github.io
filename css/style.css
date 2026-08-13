@@ -504,6 +504,19 @@ a.proc-name:hover {
     display: block;
 }
 
+.proc-media.diagram {
+    background: var(--surface);
+    padding: 20px;
+    aspect-ratio: auto;
+}
+
+.proc-media.diagram img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
 a.inline-link {
     color: var(--teal);
     text-decoration: none;
