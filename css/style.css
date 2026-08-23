@@ -66,6 +66,7 @@ button:focus-visible {
     max-width: var(--maxw);
     margin: 0 auto;
     padding: 0 28px;
+    margin-top: 30px;
 }
 
 @media (max-width:640px) {
@@ -168,7 +169,7 @@ button:focus-visible {
 
 /* ---------- hero ---------- */
 .hero {
-    padding: 168px 0 96px;
+    padding: 168px 150px 96px;
     border-bottom: 1px solid var(--border);
     position: relative;
     overflow: hidden;
@@ -193,7 +194,7 @@ h1 {
     font-size: clamp(34px, 6vw, 60px);
     letter-spacing: -0.01em;
     line-height: 1.08;
-    max-width: 14ch;
+    max-width: 18ch;
 }
 
 .role {
@@ -305,6 +306,7 @@ section {
     font-family: var(--mono);
     font-size: 13px;
     color: var(--text-dim);
+    margin-top: 20px;
 }
 
 .prompt::before {
@@ -349,6 +351,7 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 14px;
+    margin-top: -30px;
 }
 
 .proc {
@@ -477,6 +480,26 @@ a.proc-name:hover {
     margin-top: 16px;
 }
 
+.exp-group {
+    margin-top: 20px;
+}
+
+.exp-group-label {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--amber);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 6px;
+}
+
+.exp-group-desc {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.55;
+    max-width: 68ch;
+}
+
 .stat-chip {
     font-family: var(--mono);
     font-size: 12px;
@@ -510,6 +533,20 @@ a.proc-name:hover {
     padding: 20px;
 }
 
+.media-cta {
+    display: inline-block;
+    margin-top: 12px;
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--amber);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.media-cta:hover {
+    border-bottom-color: var(--amber);
+}
+
 a.inline-link {
     color: var(--teal);
     text-decoration: none;
@@ -528,6 +565,7 @@ a.inline-link:hover {
     border: 1px solid var(--border);
     border-radius: 12px;
     overflow: hidden;
+    margin-top: -30px;
 }
 
 .stack-cat {
