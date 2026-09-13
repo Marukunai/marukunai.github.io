@@ -169,7 +169,8 @@ button:focus-visible {
 
 /* ---------- hero ---------- */
 .hero {
-    padding: 168px 150px 96px;
+    padding-top: 168px;
+    padding-bottom: 96px;
     border-bottom: 1px solid var(--border);
     position: relative;
     overflow: hidden;
