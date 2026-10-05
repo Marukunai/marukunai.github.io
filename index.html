@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marc Martín Pérez — Backend Engineer</title>
-    <meta name="description"
-        content="Backend Engineer especializado en sistemas en tiempo real, torneos online, Android y datos. Java/Spring, WebSocket, Node.js, Oracle/BI." />
+    <title>Marc Martín Pérez — Backend & Full-Stack Developer</title>
 
+    <meta name="description"
+        content="Backend & Full-Stack Developer especializado en Java, Spring Boot, React, TypeScript, WebSocket y sistemas en tiempo real." />
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Marc Martín Pérez — Backend Engineer">
+    <meta property="og:title" content="Marc Martín Pérez — Backend & Full-Stack Developer">
     <meta property="og:description"
-        content="Sistemas en tiempo real, torneos online, Android y datos. Java/Spring, WebSocket, Node.js, Oracle/BI.">
+        content="Backend & Full-Stack Developer especializado en Java, Spring Boot, React, TypeScript y sistemas en tiempo real.">
     <meta property="og:image" content="https://marukunai.github.io/img/og-image.png">
     <meta property="og:url" content="https://marukunai.github.io">
     <meta name="twitter:card" content="summary_large_image">
@@ -51,27 +51,30 @@
     <header class="hero wrap">
         <div class="eyebrow"><span class="dot"></span>status: disponible para nuevos proyectos</div>
         <h1>Marc Martín Pérez</h1>
-        <div class="role">Backend Engineer — Java / Spring · Tiempo real · Android · Datos</div>
-        <p class="lede">
-            Diseño sistemas que <strong>no se caen cuando más gente los está usando</strong>: torneos de póker con
-            cientos de jugadores conectados a la vez por WebSocket, apps Android con miles de usuarios, e informes que
-            tienen que cuadrar siempre. Java, Node.js y Oracle en el backend; código que se pueda leer dentro de un año.
-        </p>
-        <div class="hero-cta">
-            <a href="#proyectos" class="btn btn-primary">Ver proyectos →</a>
-            <a href="#contacto" class="btn btn-ghost">Hablemos</a>
-        </div>
+        <<div class="role">Backend & Full-Stack Developer — Java / Spring Boot · React / TypeScript · Tiempo real</div>
 
-        <svg class="pulseline" viewBox="0 0 800 64" preserveAspectRatio="none" aria-hidden="true">
-            <path
-                d="M0,32 L120,32 L140,32 L155,8 L170,56 L185,32 L210,32 L340,32 L360,32 L375,14 L390,50 L405,32 L430,32 L560,32 L580,32 L595,4 L610,58 L625,32 L650,32 L800,32" />
-        </svg>
+            <p class="lede">
+                Diseño sistemas que <strong>no se caen cuando más gente los está usando</strong>: plataformas
+                multijugador en tiempo real, aplicaciones full-stack y APIs que tienen que mantenerse sólidas
+                bajo carga. Trabajo principalmente con <strong>Java, Spring Boot, React, TypeScript y
+                    WebSocket</strong>,
+                combinando arquitectura backend, bases de datos y desarrollo frontend.
+            </p>
+            <div class="hero-cta">
+                <a href="#proyectos" class="btn btn-primary">Ver proyectos →</a>
+                <a href="#contacto" class="btn btn-ghost">Hablemos</a>
+            </div>
+
+            <svg class="pulseline" viewBox="0 0 800 64" preserveAspectRatio="none" aria-hidden="true">
+                <path
+                    d="M0,32 L120,32 L140,32 L155,8 L170,56 L185,32 L210,32 L340,32 L360,32 L375,14 L390,50 L405,32 L430,32 L560,32 L580,32 L595,4 L610,58 L625,32 L650,32 L800,32" />
+            </svg>
     </header>
 
     <section id="proyectos" class="wrap">
         <div class="section-head reveal-target">
             <div class="prompt">ps --projects</div>
-            <h2>Lo que tengo en ejecución</h2>
+            <h2>Proyectos destacados</h2>
         </div>
 
         <div class="proc-table">
@@ -79,57 +82,87 @@
                 <div class="proc-top">
                     <div>
                         <span class="proc-id">proc/01</span>
-                        <a class="proc-name proc-link" href="https://github.com/Marukunai/chess-platform"
-                            target="_blank" rel="noopener">Chess Platform — Ajedrez en Tiempo Real ↗</a>
-                        <div class="proc-tags">SPRING BOOT · WEBSOCKET STOMP · GLICKO-2</div>
+                        <div class="proc-name">Poker Online — Texas Hold'em en Tiempo Real</div>
+                        <div class="proc-tags">JAVA 17 · SPRING BOOT · REACT · TYPESCRIPT · WEBSOCKET/STOMP · JWT ·
+                            MYSQL</div>
                     </div>
-                    <span class="proc-status stable"><span class="dot"></span>estable</span>
+
+                    <div class="proc-status-group">
+                        <span class="proc-status dev">
+                            <span class="dot"></span>en desarrollo
+                        </span>
+                        <span class="proc-private">código privado</span>
+                    </div>
                 </div>
-                <p class="proc-desc">Plataforma de ajedrez online en tiempo real, ampliando la base del backend de
-                    póker: motor de reglas propio (jaque, enroque, en passant, coronación), WebSocket vía STOMP,
-                    rating Glicko-2 independiente por modalidad (bullet/blitz/rápidas/clásicas) y matchmaking por
-                    cola. Sobre esa base fue creciendo un sistema social completo: amigos con presencia en vivo,
-                    mensajería persistente, chat de partida, retos directos, 38 logros con progreso en tiempo real, y
-                    reconexión automática ante cortes de red.</p>
+
+                <p class="proc-desc">
+                    Plataforma completa de Texas Hold'em multijugador en tiempo real, con backend en Spring Boot
+                    y frontend en React + TypeScript. Arquitectura modular de más de 250 clases Java para
+                    partidas, torneos, jugadores, amigos, logros, ranking, moderación, espectadores,
+                    transferencias y bots.
+                    Comunicación mediante WebSocket/STOMP para sincronizar turnos, cronómetros, chat y eventos
+                    de mesa, junto con autenticación JWT y API REST mediante Axios.
+                    El frontend incluye lobby, partidas en vivo, mesas privadas, torneos, perfil, amigos,
+                    historial, ranking y logros. Actualmente en fase final de administración, migración
+                    definitiva a base de datos y despliegue online.
+                </p>
+
                 <div class="proc-stats">
-                    <span class="stat-chip">38 logros</span>
-                    <span class="stat-chip">Glicko-2 por modalidad</span>
-                    <span class="stat-chip">Reconexión automática</span>
+                    <span class="stat-chip">250+ clases Java</span>
+                    <span class="stat-chip">React + TypeScript</span>
+                    <span class="stat-chip">WebSocket/STOMP</span>
+                    <span class="stat-chip">Torneos + bots</span>
                 </div>
-                <div class="proc-media">
-                    <img src="img/proyectos/chess-platform/chess-platform.png" alt="Chess Platform en ejecución"
+
+                <div class="proc-media diagram">
+                    <img src="img/proyectos/poker/poker-arquitectura.svg" alt="Arquitectura de Poker Online"
                         loading="lazy">
                 </div>
-                <a class="media-cta" href="http://chess-platform-web.onrender.com/" target="_blank" rel="noopener">▶
-                    Jugar en vivo (arranque en frío: 30-60s) →</a>
             </article>
 
             <article class="proc reveal-target">
                 <div class="proc-top">
                     <div>
                         <span class="proc-id">proc/02</span>
-                        <div class="proc-name">Poker Online — Backend</div>
-                        <div class="proc-tags">SPRING BOOT · WEBSOCKET · JWT · MYSQL</div>
+                        <a class="proc-name proc-link" href="https://github.com/Marukunai/chess-platform"
+                            target="_blank" rel="noopener">
+                            Chess Platform — Ajedrez en Tiempo Real ↗
+                        </a>
+
+                        <div class="proc-tags">
+                            JAVA · SPRING BOOT · REACT/TYPESCRIPT · WEBSOCKET/STOMP · MYSQL · ANDROID
+                        </div>
                     </div>
-                    <div class="proc-status-group">
-                        <span class="proc-status dev"><span class="dot"></span>en desarrollo</span>
-                        <span class="proc-private">código privado</span>
-                    </div>
+
+                    <span class="proc-status stable">
+                        <span class="dot"></span>estable
+                    </span>
                 </div>
-                <p class="proc-desc">Backend de un Texas Hold'em multijugador en tiempo real — 207 clases Java
-                    organizadas en dominios (torneos, amigos, logros, moderación, bots). Autenticación JWT, mesas por
-                    WebSocket, motor de bots con IA, torneos individuales y por equipos, moderación con sanciones
-                    automáticas, modo espectador, mesas privadas y un sistema de amigos completo con chat privado y
-                    transferencia de fichas. 53 logros distintos, estadísticas y ranking, API testeada con Postman.</p>
+
+                <p class="proc-desc">
+                    Plataforma de ajedrez multijugador en tiempo real con clientes web y Android.
+                    Incluye un motor propio de validación de movimientos, gestión de estados de partida
+                    y sincronización de tableros mediante WebSocket/STOMP.
+                    Incorpora matchmaking, cronómetros sincronizados, persistencia de partidas,
+                    estadísticas, rating Glicko-2, bots mediante UCI y generación de puzzles,
+                    además de funcionalidades sociales y reconexión automática.
+                </p>
+
                 <div class="proc-stats">
-                    <span class="stat-chip">207 clases Java</span>
-                    <span class="stat-chip">53 logros</span>
-                    <span class="stat-chip">JWT + WebSocket</span>
+                    <span class="stat-chip">Motor de reglas propio</span>
+                    <span class="stat-chip">Glicko-2</span>
+                    <span class="stat-chip">WebSocket/STOMP</span>
+                    <span class="stat-chip">Bots UCI</span>
                 </div>
-                <!-- Diagrama de arquitectura -->
-                <div class="proc-media diagram"><img src="img/proyectos/poker/poker-arquitectura.svg"
-                        alt="Diagrama de arquitectura del backend de poker_online: cliente conecta vía REST y WebSocket a Spring Boot 3, que contiene los módulos de dominio, jobs programados, y persiste en MySQL 8"
-                        loading="lazy"></div>
+
+                <div class="proc-media">
+                    <img src="img/proyectos/chess-platform/chess-platform.png" alt="Chess Platform en ejecución"
+                        loading="lazy">
+                </div>
+
+                <a class="media-cta" href="http://chess-platform-web.onrender.com/" target="_blank" rel="noopener">
+                    ▶ Jugar en vivo (arranque en frío: 30-60s) →
+                </a>
             </article>
 
             <article class="proc reveal-target">
@@ -142,15 +175,20 @@
                     </div>
                     <span class="proc-status stable"><span class="dot"></span>estable</span>
                 </div>
-                <p class="proc-desc">Blackjack de casino en Python con Pygame: de 1 a 8 mazos, todas las jugadas reales
-                    (double down, split, surrender, insurance), un sistema de pistas con estrategia básica y contador de
-                    cartas Hi-Lo visual, animaciones y estadísticas de sesión. Arquitectura por capas
-                    (core/engine/ai/ui) con tests unitarios en pytest.</p>
+                <p class="proc-desc">
+                    Implementación completa de Blackjack en Python con Pygame, con soporte para 1–8 mazos
+                    y las principales jugadas del juego: double down, split, surrender e insurance.
+                    Incluye sistema de pistas basado en estrategia básica, contador de cartas Hi-Lo,
+                    estadísticas de sesión, animaciones y una arquitectura separada por capas
+                    para lógica, motor, IA e interfaz. El proyecto cuenta además con tests automatizados
+                    mediante Pytest.
+                </p>
                 <div class="proc-stats">
                     <span class="stat-chip">1–8 mazos</span>
                     <span class="stat-chip">Hi-Lo counter</span>
-                    <span class="stat-chip">pytest</span>
-                    <span class="stat-chip">Instalador Windows</span>
+                    <span class="stat-chip">Arquitectura por capas</span>
+                    <span class="stat-chip">Pytest</span>
+                    <span class="stat-chip">Windows Installer</span>
                 </div>
                 <div class="proc-media">
                     <img src="img/proyectos/blackjack/blackjack.png" alt="Blackjack Pro en ejecución" loading="lazy">
@@ -164,56 +202,32 @@
                 <div class="proc-top">
                     <div>
                         <span class="proc-id">proc/04</span>
-                        <div class="proc-name">App de Anime — Full Stack</div>
-                        <div class="proc-tags">ANDROID · SPRING BOOT · JPA</div>
+                        <div class="proc-name">KaizoBankKunai — Plataforma Bancaria</div>
+                        <div class="proc-tags">FULL-STACK · JAVA · SPRING BOOT · TYPESCRIPT · EN DESARROLLO</div>
                     </div>
-                    <span class="proc-status dev"><span class="dot"></span>en desarrollo</span>
-                </div>
-                <p class="proc-desc">Dos repos, un proyecto: <a class="inline-link"
-                        href="https://github.com/Marukunai/animeDB" target="_blank"
-                        rel="noopener"><code>animeDB</code></a> es una API en Spring Boot con JPA (controladores, DTOs,
-                    repositorios) para animes, vídeos, usuarios y favoritos; <a class="inline-link"
-                        href="https://github.com/Marukunai/animeApp" target="_blank"
-                        rel="noopener"><code>animeApp</code></a> es el cliente Android que la consume vía Retrofit, con
-                    login, favoritos animados, galería y reproductor a pantalla completa.</p>
-                <div class="proc-stats">
-                    <span class="stat-chip">2 repos</span>
-                    <span class="stat-chip">Spring Boot + JPA</span>
-                    <span class="stat-chip">Retrofit</span>
-                </div>
-                <div class="proc-media">
-                    <img src="img/proyectos/anime/anime.png" alt="App de Anime, pantalla de favoritos" loading="lazy">
+
+                    <span class="proc-status dev">
+                        <span class="dot"></span>en desarrollo
+                    </span>
                 </div>
 
+                <p class="proc-desc">
+                    Proyecto colaborativo desarrollado junto a Aymane, orientado a la construcción de
+                    una aplicación bancaria completa. Actualmente en desarrollo, con foco en arquitectura
+                    backend, gestión de datos, lógica de negocio y construcción progresiva de la interfaz.
+                </p>
+
+                <div class="proc-stats">
+                    <span class="stat-chip">Proyecto colaborativo</span>
+                    <span class="stat-chip">Backend + Frontend</span>
+                    <span class="stat-chip">En desarrollo</span>
+                </div>
             </article>
 
             <article class="proc reveal-target">
                 <div class="proc-top">
                     <div>
                         <span class="proc-id">proc/05</span>
-                        <a class="proc-name proc-link" href="https://github.com/Marukunai/cooperativa" target="_blank"
-                            rel="noopener">Web Cooperativa Musical ↗</a>
-                        <div class="proc-tags">NODE.JS · API SPOTIFY · MÉTRICAS</div>
-                    </div>
-                    <span class="proc-status stable"><span class="dot"></span>en desarrollo</span>
-                </div>
-                <p class="proc-desc">Landing para tres artistas con datos en vivo de Spotify (top tracks), middleware
-                    propio de estadísticas de visitas y un panel <code>/stats</code> para seguir el rendimiento del
-                    sitio.</p>
-                <div class="proc-stats">
-                    <span class="stat-chip">3 artistas</span>
-                    <span class="stat-chip">API Spotify</span>
-                    <span class="stat-chip">/stats en vivo</span>
-                </div>
-                <div class="proc-media">
-                    <img src="img/proyectos/cooperativa/cooperativa.png" alt="Web Cooperativa Musical" loading="lazy">
-                </div>
-            </article>
-
-            <article class="proc reveal-target">
-                <div class="proc-top">
-                    <div>
-                        <span class="proc-id">proc/06</span>
                         <a class="proc-name proc-link" href="https://marukunai.github.io/jrodriguez-web" target="_blank"
                             rel="noopener">Web Artista — J Rodriguez ↗</a>
                         <div class="proc-tags">YOUTUBE DATA API · FORMSPREE · SIN BACKEND</div>
@@ -234,6 +248,29 @@
                 </div>
                 <a class="media-cta" href="https://github.com/Marukunai/jrodriguez-web" target="_blank"
                     rel="noopener">Ver código en GitHub →</a>
+            </article>
+
+            <article class="proc reveal-target">
+                <div class="proc-top">
+                    <div>
+                        <span class="proc-id">proc/06</span>
+                        <a class="proc-name proc-link" href="https://github.com/Marukunai/cooperativa" target="_blank"
+                            rel="noopener">Web Cooperativa Musical ↗</a>
+                        <div class="proc-tags">NODE.JS · API SPOTIFY · MÉTRICAS</div>
+                    </div>
+                    <span class="proc-status stable"><span class="dot"></span>en desarrollo</span>
+                </div>
+                <p class="proc-desc">Landing para tres artistas con datos en vivo de Spotify (top tracks), middleware
+                    propio de estadísticas de visitas y un panel <code>/stats</code> para seguir el rendimiento del
+                    sitio.</p>
+                <div class="proc-stats">
+                    <span class="stat-chip">3 artistas</span>
+                    <span class="stat-chip">API Spotify</span>
+                    <span class="stat-chip">/stats en vivo</span>
+                </div>
+                <div class="proc-media">
+                    <img src="img/proyectos/cooperativa/cooperativa.png" alt="Web Cooperativa Musical" loading="lazy">
+                </div>
             </article>
 
             <article class="proc reveal-target">
@@ -262,6 +299,33 @@
                 </div>
                 <a class="media-cta" href="https://github.com/Marukunai/taller-app" target="_blank" rel="noopener">Ver
                     código en GitHub →</a>
+            </article>
+
+            <article class="proc reveal-target">
+                <div class="proc-top">
+                    <div>
+                        <span class="proc-id">proc/05</span>
+                        <div class="proc-name">App de Anime — Full Stack</div>
+                        <div class="proc-tags">ANDROID · SPRING BOOT · JPA</div>
+                    </div>
+                    <span class="proc-status dev"><span class="dot"></span>en desarrollo</span>
+                </div>
+                <p class="proc-desc">Dos repos, un proyecto: <a class="inline-link"
+                        href="https://github.com/Marukunai/animeDB" target="_blank"
+                        rel="noopener"><code>animeDB</code></a> es una API en Spring Boot con JPA (controladores, DTOs,
+                    repositorios) para animes, vídeos, usuarios y favoritos; <a class="inline-link"
+                        href="https://github.com/Marukunai/animeApp" target="_blank"
+                        rel="noopener"><code>animeApp</code></a> es el cliente Android que la consume vía Retrofit, con
+                    login, favoritos animados, galería y reproductor a pantalla completa.</p>
+                <div class="proc-stats">
+                    <span class="stat-chip">2 repos</span>
+                    <span class="stat-chip">Spring Boot + JPA</span>
+                    <span class="stat-chip">Retrofit</span>
+                </div>
+                <div class="proc-media">
+                    <img src="img/proyectos/anime/anime.png" alt="App de Anime, pantalla de favoritos" loading="lazy">
+                </div>
+
             </article>
         </div>
     </section>
@@ -366,42 +430,73 @@
             <h2>Con qué construyo</h2>
         </div>
         <div class="stack-grid reveal-target">
+
             <div class="stack-cat">
                 <h3>Backend</h3>
                 <ul>
                     <li>Java / Spring Boot</li>
-                    <li>Node.js</li>
                     <li>Python</li>
+                    <li>Node.js</li>
                     <li>C++</li>
-                    <li>Bash</li>
-                </ul>
-            </div>
-            <div class="stack-cat">
-                <h3>Tiempo real & Mobile</h3>
-                <ul>
-                    <li>WebSocket</li>
-                    <li>Android</li>
                     <li>Kotlin</li>
-                </ul>
-            </div>
-            <div class="stack-cat">
-                <h3>Datos</h3>
-                <ul>
-                    <li>PostgreSQL</li>
-                    <li>MySQL</li>
-                    <li>Oracle DB</li>
                     <li>PL/SQL</li>
                 </ul>
             </div>
+
             <div class="stack-cat">
-                <h3>Infra & Deploy</h3>
+                <h3>Frontend</h3>
+                <ul>
+                    <li>React</li>
+                    <li>TypeScript / TSX</li>
+                    <li>JavaScript</li>
+                    <li>Vite</li>
+                    <li>HTML / CSS</li>
+                </ul>
+            </div>
+
+            <div class="stack-cat">
+                <h3>APIs & Tiempo real</h3>
+                <ul>
+                    <li>REST APIs</li>
+                    <li>WebSocket</li>
+                    <li>STOMP</li>
+                    <li>JWT</li>
+                    <li>Axios</li>
+                </ul>
+            </div>
+
+            <div class="stack-cat">
+                <h3>Datos</h3>
+                <ul>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                    <li>Oracle DB</li>
+                    <li>MongoDB</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+
+            <div class="stack-cat">
+                <h3>DevOps</h3>
                 <ul>
                     <li>Docker</li>
                     <li>Git</li>
-                    <li>Render</li>
-                    <li>Vercel</li>
+                    <li>Azure DevOps</li>
+                    <li>CI/CD</li>
+                    <li>Linux / Bash</li>
                 </ul>
             </div>
+
+            <div class="stack-cat">
+                <h3>Mobile & Enterprise</h3>
+                <ul>
+                    <li>Android SDK</li>
+                    <li>Retrofit</li>
+                    <li>Alfresco SDK</li>
+                    <li>Oracle BI Publisher</li>
+                </ul>
+            </div>
+
         </div>
     </section>
 
@@ -437,23 +532,25 @@
             </div>
             <div class="fact">
                 <div class="fact-k">gaming</div>
-                <div class="fact-v">LoL, Valorant, CS2 · y ETS2 / Sons of the Forest para relajar</div>
+                <div class="fact-v">LoL, Pokémon, Valorant, CS2 · y ETS2 / Sons of the Forest / Super Mario Galaxy para
+                    relajar</div>
             </div>
             <div class="fact">
-                <div class="fact-k">pokémon</div>
-                <div class="fact-v">Fan desde crío — favorito <strong>Emboar</strong>, pero todos me asocian con
-                    <strong>Rayquaza</strong>
+                <div class="fact">
+                    <div class="fact-k">pokémon</div>
+                    <div class="fact-v">
+                        Blanco y Negro · Esmeralda · Amarillo · favorito <strong>Emboar</strong>
+                    </div>
+                </div>
+                <div class="fact">
+                    <div class="fact-k">top 3</div>
+                    <div class="fact-v">Pokémon Negro, Esmeralda y HeartGold</div>
+                </div>
+                <div class="fact">
+                    <div class="fact-k">carretera</div>
+                    <div class="fact-v">Del simulador a plantearme un camión de verdad algún día</div>
                 </div>
             </div>
-            <div class="fact">
-                <div class="fact-k">top 3</div>
-                <div class="fact-v">Pokémon Negro, Esmeralda y HeartGold</div>
-            </div>
-            <div class="fact">
-                <div class="fact-k">carretera</div>
-                <div class="fact-v">Del simulador a plantearme un camión de verdad algún día</div>
-            </div>
-        </div>
     </section>
 
     <section id="contacto" class="wrap">

@@ -359,7 +359,7 @@ h2 {
     border: 1px solid var(--border);
     border-radius: 12px;
     background: var(--surface);
-    padding: 26px 28px;
+    padding: 22px 24px;
     transition: border-color .2s ease, transform .2s ease, background .2s ease;
     opacity: 0;
     transform: translateY(14px);
@@ -423,7 +423,7 @@ a.proc-name:hover {
 
 .proc-tags {
     font-family: var(--mono);
-    font-size: 11px;
+    font-size: 10.5px;
     color: var(--text-muted);
     margin-top: 4px;
     letter-spacing: 0.02em;
@@ -461,10 +461,10 @@ a.proc-name:hover {
 
 .proc-desc {
     color: var(--text-muted);
-    margin-top: 16px;
+    margin-top: 14px;
     max-width: 70ch;
-    font-size: 15px;
-    line-height: 1.65;
+    font-size: 14px;
+    line-height: 1.6;
 }
 
 .proc-desc code {
@@ -479,6 +479,28 @@ a.proc-name:hover {
     flex-wrap: wrap;
     gap: 8px;
     margin-top: 16px;
+}
+
+@media (max-width: 640px) {
+    .proc {
+        padding: 20px;
+    }
+
+    .proc-name {
+        font-size: 16px;
+    }
+
+    .proc-desc {
+        font-size: 14px;
+    }
+
+    .proc-tags {
+        line-height: 1.6;
+    }
+
+    .proc-media img {
+        max-height: 300px;
+    }
 }
 
 .exp-group {
