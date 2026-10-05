@@ -582,7 +582,7 @@ a.inline-link:hover {
 /* ---------- stack ---------- */
 .stack-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
     gap: 1px;
     background: var(--border);
     border: 1px solid var(--border);
@@ -628,6 +628,18 @@ a.inline-link:hover {
     border-radius: 50%;
     background: var(--text-dim);
     flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+    .stack-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .stack-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ---------- about ---------- */
